@@ -23,9 +23,12 @@ const App = () => {
       date: new Date(2021, 5, 12),
     },
   ];
+  const saveExpenseDataHandler = (expenseData) => {
+    console.log("in app " + expenseData.id);
+  };
   return (
     <div>
-      <NewExpense />
+      <NewExpense onSaveExpenseData={saveExpenseDataHandler} />
       <Expenses items={expenses} />
     </div>
   );
