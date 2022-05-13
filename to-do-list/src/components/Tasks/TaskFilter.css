@@ -1,0 +1,13 @@
+.filter {
+  width: 40rem;
+  padding: 40px 20px;
+  color: #fff;
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+}
+.filter select {
+  width: 250px;
+  height: 2rem;
+  border-radius: 12px;
+}

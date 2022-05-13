@@ -3,11 +3,28 @@ import "./Expenses.css";
 import ExpenseItem from "./ExpenseItem";
 import Card from "../UI/Card";
 import ExpenseFilter from "./ExpensesFilter";
+import ExpensesChart from "./ExpensesChart";
 const Expenses = (props) => {
   const [enteredYear, setEnteredYear] = useState("2020");
   const selectedYearHandler = (selectedYear) => {
     setEnteredYear(selectedYear);
   };
+  const filteredExpenses = props.items.filter((expenses) => {
+    return expenses.date.getFullYear().toString() === enteredYear;
+  });
+  let expenseContent = <p>No expenses found.</p>;
+  if (filteredExpenses.length > 0) {
+    expenseContent = filteredExpenses.map((expenses) => {
+      return (
+        <ExpenseItem
+          key={expenses.id}
+          expenseTitle={expenses.title}
+          expenseAmount={expenses.amount}
+          expenseDate={expenses.date}
+        />
+      );
+    });
+  }
   return (
     <div>
       <Card className="expenses">
@@ -15,26 +32,8 @@ const Expenses = (props) => {
           onSelectedYear={selectedYearHandler}
           selected={enteredYear}
         />
-        <ExpenseItem
-          expenseDate={props.items[0].date}
-          expenseTitle={props.items[0].title}
-          expenseAmount={props.items[0].amount}
-        />
-        <ExpenseItem
-          expenseDate={props.items[1].date}
-          expenseTitle={props.items[1].title}
-          expenseAmount={props.items[1].amount}
-        />
-        <ExpenseItem
-          expenseDate={props.items[2].date}
-          expenseTitle={props.items[2].title}
-          expenseAmount={props.items[2].amount}
-        />
-        <ExpenseItem
-          expenseDate={props.items[3].date}
-          expenseTitle={props.items[3].title}
-          expenseAmount={props.items[3].amount}
-        />
+        {/* <ExpensesChart expenses={filteredExpenses} /> */}
+        {expenseContent}
       </Card>
     </div>
   );
