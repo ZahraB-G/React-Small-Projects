@@ -1,0 +1,11 @@
+.container {
+  width: 40rem;
+  height: 3rem;
+  margin: 10px auto;
+  padding-left: 30px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #a61e4d;
+  color: #fff;
+}
