@@ -1,0 +1,30 @@
+.form-content {
+  width: 40rem;
+  height: 12rem;
+  margin: 100px auto;
+  padding: 20px 20px;
+  border-radius: 12px;
+  box-shadow: 10px 10px 30px #dad8d8;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+.form-content label {
+  font-weight: bold;
+}
+.form-content div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.form-content input {
+  width: 40rem;
+  height: 1.5rem;
+}
+.form-content button {
+  color: #fff;
+  background-color: hsl(271, 76%, 53%, 0.7);
+  width: 150px;
+  height: 35px;
+}

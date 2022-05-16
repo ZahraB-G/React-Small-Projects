@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import NewGoal from "./components/NewGoal/NewGoal";
 import Goals from "./components/Goals/Goals";
+import "../src/App.css";
 const INITIAL_GOALS = [
   { id: "g1", title: "Do all exercises!" },
   { id: "g2", title: "Finish the Course!" },
