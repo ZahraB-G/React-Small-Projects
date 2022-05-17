@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Lato", sans-serif;
+  color: #343a40;
+  background-color: pink;
+}
+.item {
+  width: 30rem;
+  margin: 10px auto;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 40px;
+}
+.item img {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+}
+.item span {
+  color: #adb5bd;
+}
