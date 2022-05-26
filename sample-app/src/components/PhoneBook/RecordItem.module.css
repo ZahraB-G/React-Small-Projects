@@ -1,0 +1,9 @@
+.container {
+  width: 40rem;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  border: 1.5px solid rgb(167, 160, 160);
+  padding: 25px 25px;
+  border-radius: 12px;
+}

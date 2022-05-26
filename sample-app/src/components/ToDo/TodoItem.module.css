@@ -1,0 +1,22 @@
+.container {
+  width: 50rem;
+  margin: 50px auto;
+  padding: 25px 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1.5px solid #faa2c1;
+  border-radius: 12px;
+}
+.button-container {
+  display: flex;
+  gap: 25px;
+}
+button {
+  width: 100px;
+  height: 35px;
+  color: #fff;
+  background: linear-gradient(to right, #f783ac, #a61e4d);
+  border: none;
+  border-radius: 12px;
+}

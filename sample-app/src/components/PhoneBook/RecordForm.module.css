@@ -1,0 +1,20 @@
+.container {
+  width: 50rem;
+  margin: 50px auto;
+  padding: 25px 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 35px;
+  background-color: rgb(213, 205, 205, 0.3);
+  border-radius: 12px;
+}
+.container div {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.contianer div input {
+  align-self: flex-start;
+}
