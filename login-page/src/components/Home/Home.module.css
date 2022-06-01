@@ -1,0 +1,14 @@
+.container {
+  width: 80rem;
+  height: 5rem;
+  margin: 50px auto;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border: 1.5px solid rgb(189, 174, 174);
+  border-radius: 12px;
+}
+.item {
+  cursor: pointer;
+}
