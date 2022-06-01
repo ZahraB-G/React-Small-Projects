@@ -1,3 +1,4 @@
+import Calculator from "./components/Calculator/Calculator";
 import Phonebook from "./components/PhoneBook/Phonebook";
 import SpinBox from "./components/SpinBox/SpinBox";
 import Todo from "./components/ToDo/Todo";
@@ -6,7 +7,8 @@ function App() {
     <div>
       {/* <SpinBox /> */}
       {/* <Todo /> */}
-      <Phonebook />
+      {/* <Phonebook /> */}
+      <Calculator />
     </div>
   );
 }

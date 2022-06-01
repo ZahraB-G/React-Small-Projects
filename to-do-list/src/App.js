@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import NewTask from "./components/NewTask/NewTask";
 import Tasks from "./components/Tasks/Tasks";
 import Card from "./components/UI/Card";
@@ -17,6 +17,7 @@ function App() {
       return [newTask, ...prevTasks];
     });
   };
+
   return (
     <Card className="main-container">
       <h1>To Do List</h1>
